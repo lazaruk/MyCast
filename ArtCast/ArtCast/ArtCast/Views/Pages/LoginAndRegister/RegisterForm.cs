@@ -80,9 +80,9 @@ namespace ArtCast.Views.Pages.LoginAndRegister
 
             var answers = new List<AnswerSpecspecializationRegisterModel> //todo from BD
             {
-                new AnswerSpecspecializationRegisterModel {Specspecialization = SpecTypes.Model, Text = "Модельный бизнес"},
-                new AnswerSpecspecializationRegisterModel {Specspecialization = SpecTypes.Club, Text = "Клубный бизнес"},
-                new AnswerSpecspecializationRegisterModel {Specspecialization = SpecTypes.Show, Text = "Шоу-бизнес"}
+                new AnswerSpecspecializationRegisterModel {Specspecialization = TypeBusiness.Model, Text = "Модельный бизнес"},
+                new AnswerSpecspecializationRegisterModel {Specspecialization = TypeBusiness.Club, Text = "Клубный бизнес"},
+                new AnswerSpecspecializationRegisterModel {Specspecialization = TypeBusiness.Show, Text = "Шоу-бизнес"}
             };
 
             var collection = new ObservableCollection<SfRatingItem>();
@@ -212,9 +212,9 @@ namespace ArtCast.Views.Pages.LoginAndRegister
 
             switch (specAnswer?.Specspecialization)
             {
-                case SpecTypes.Model: icon = AwesomeFontIcons.Camera; break;
-                case SpecTypes.Club: icon = AwesomeFontIcons.Star; break;
-                case SpecTypes.Show: icon = AwesomeFontIcons.Star; break;
+                case TypeBusiness.Model: icon = AwesomeFontIcons.Camera; break;
+                case TypeBusiness.Club: icon = AwesomeFontIcons.Star; break;
+                case TypeBusiness.Show: icon = AwesomeFontIcons.Star; break;
             }
 
             return new SfRatingItem

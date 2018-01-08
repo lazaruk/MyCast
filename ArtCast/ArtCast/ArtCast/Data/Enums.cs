@@ -8,12 +8,19 @@
         Admin
     }
 
-    public enum SpecTypes
+    public enum TypeBusiness
     {
         None,
         Model,
         Club,
         Show
+    }
+
+    public enum Specializations
+    {
+        None,
+        Model,
+        Photographer
     }
 
     public enum Steps

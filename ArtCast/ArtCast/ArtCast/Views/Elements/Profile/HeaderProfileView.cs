@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using ArtCast.Data;
+﻿using ArtCast.Data;
 using ArtCast.Models.User;
 using ArtCast.Styles;
 using Xamarin.Forms;
@@ -8,38 +7,28 @@ namespace ArtCast.Views.Elements.Profile
 {
     public class HeaderProfileView: ContentView
     {
-        public HeaderProfileView()
+        public HeaderProfileView(UserModel user)
         {
-            var conatctsList = new List<UserContacts> //todo from bd
-            {
-                new UserContacts {Type = Сommunications.Vk, Link = "https://vk.com/id68543836"},
-                new UserContacts {Type = Сommunications.Instagram, Link = "https://www.instagram.com/_lazaruk_/"},
-                new UserContacts {Type = Сommunications.Telegram, Link = "https://t.me/lazaruk_karina"}, //tg://resolve?domain=имя
-                new UserContacts {Type = Сommunications.Whatsup, Link = "https://api.whatsapp.com/send?phone=375333882442"}, //whatsapp://send?phone=79xxxxxxxxx
-                new UserContacts {Type = Сommunications.Site, Link = ""},
-                new UserContacts {Type = Сommunications.Viber, Link = ""} //viber://chat?number=+375333882442
-            };
-
             var photo = new Image
             {
-                Source = "noava.jpg", //todo BD
+                Source = user.SourcePrimaryPhoto,
                 WidthRequest = 120,
                 HeightRequest = 120
             };
 
             var name = new Label
             {
-                Text = "Имя Фамилия",
+                Text = user.Name,
                 Style = AppStyles.LabelProfileStyle
             };
 
             var spec = new Label
             {
-                Text = "Специализация",
+                Text = GetSpecialization(user.Specialization),
                 Style = AppStyles.LabelProfileStyle
             };
 
-            var contacts = new ContactsView(conatctsList);
+            var contacts = new ContactsView(user.Contacts);
 
             var infogrid = new Grid
             {
@@ -66,6 +55,16 @@ namespace ArtCast.Views.Elements.Profile
             infogrid.Children.Add(contacts, 1, 2);
 
             Content = infogrid;
+        }
+
+        private string GetSpecialization(Specializations specialization)
+        {
+            switch (specialization)
+            {
+                case Specializations.Model:  return "Модель";
+                case Specializations.Photographer: return "Фотограф";
+                default: return "Добавить";
+            }
         }
     }
 }

@@ -43,7 +43,7 @@ namespace ArtCast.ViewModels.LoginAndRegister
         private void ExecuteTwoStepCommand(double value)
         {
             StepsSource = Steps.Three;
-            _request.Specialisation = (SpecTypes)Enum.Parse(typeof(SpecTypes), value.ToString());
+            _request.Specialisation = (TypeBusiness)Enum.Parse(typeof(TypeBusiness), value.ToString());
         }
 
         public Command ThreeStepCommand { get; }

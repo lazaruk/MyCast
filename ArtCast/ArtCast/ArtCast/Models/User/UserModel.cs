@@ -16,6 +16,10 @@ namespace ArtCast.Models.User
         public bool Intpassport { get; set; }
         public string Experience { get; set; }
         public List<UserContacts> Contacts { get; set; }
+        public Specializations Specialization { get; set; }
+        public UserTypes UserType { get; set; }
+        public string SourcePrimaryPhoto { get; set; }
+        public List<string> SourcePhotos { get; set; }
     }
 
     public class UserContacts

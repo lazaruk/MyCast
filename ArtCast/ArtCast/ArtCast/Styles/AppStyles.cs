@@ -110,5 +110,16 @@ namespace ArtCast.Styles
                 new Setter { Property = VisualElement.BackgroundColorProperty, Value = TopBarBackgroundColor}
             }
         });
+
+        private static Style _labelProfileStyle;
+        public static Style LabelProfileStyle => _labelProfileStyle ?? (_labelProfileStyle = new Style(typeof(Label))
+        {
+            Setters =
+            {
+                new Setter { Property = View.MarginProperty, Value = new Thickness(2)},
+                new Setter { Property = Label.TextColorProperty, Value = PrimaryColor},
+                new Setter { Property = Label.FontSizeProperty, Value = 20}
+            }
+        });
     }
 }

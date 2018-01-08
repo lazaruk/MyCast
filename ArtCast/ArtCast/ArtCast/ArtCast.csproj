@@ -63,6 +63,8 @@
     <Compile Include="Views\Elements\ContentViewRoundedCorners.cs" />
     <Compile Include="Views\Elements\ChangeIconView.cs" />
     <Compile Include="Views\Elements\EntryColor.cs" />
+    <Compile Include="Views\Elements\Profile\ContactsView.cs" />
+    <Compile Include="Views\Elements\Profile\HeaderProfileView.cs" />
     <Compile Include="Views\Elements\ToolBar.cs" />
     <Compile Include="Views\Elements\TopNavigationBar.cs" />
     <Compile Include="Views\Pages\Base\BasePopup.cs" />

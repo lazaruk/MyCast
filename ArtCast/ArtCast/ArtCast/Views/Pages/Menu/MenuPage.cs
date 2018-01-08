@@ -5,6 +5,7 @@ using ArtCast.ViewModels;
 using ArtCast.Views.Pages.Home;
 using System.Collections.Generic;
 using System.Windows.Input;
+using ArtCast.Views.Pages.Profile;
 using ArtCast.Views.Templates.Cells;
 using Xamarin.Forms;
 
@@ -33,7 +34,7 @@ namespace ArtCast.Views.Pages.Menu
                     IconMarginLeft = 25,
                     TextMargin = new Thickness(10, 7, 0, 0),
                     Command = _navigateToPageCommand,
-                    CommandParameter = new NavigateInfo(typeof(HomePage))
+                    CommandParameter = new NavigateInfo(typeof(ProfilePage))
                 },
                 new MasterPageItem
                 {

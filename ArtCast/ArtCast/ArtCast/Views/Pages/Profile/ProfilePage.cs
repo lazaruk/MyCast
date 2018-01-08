@@ -1,5 +1,5 @@
-﻿using ArtCast.Views.Pages.Base;
-using Xamarin.Forms;
+﻿using ArtCast.Views.Elements.Profile;
+using ArtCast.Views.Pages.Base;
 
 namespace ArtCast.Views.Pages.Profile
 {
@@ -7,7 +7,9 @@ namespace ArtCast.Views.Pages.Profile
     {
         public ProfilePage():base("Профиль", false)
         {
-            AddContent(new Label { Text = "Профиль" });
+            var header = new HeaderProfileView();
+
+            AddContent(header);
         }
     }
 }

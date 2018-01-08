@@ -22612,12 +22612,12 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\UserPc\\Documents\\Cast\\ArtCast\\ArtCast\\ArtCast.UWP\\ArtCast.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\UserPc\\Documents\\ArtCast\\ArtCast\\ArtCast\\ArtCast.UWP\\ArtCast.UWP.csproj",
       "projectName": "ArtCast.UWP",
-      "projectPath": "C:\\Users\\UserPc\\Documents\\Cast\\ArtCast\\ArtCast\\ArtCast.UWP\\ArtCast.UWP.csproj",
-      "projectJsonPath": "C:\\Users\\UserPc\\Documents\\Cast\\ArtCast\\ArtCast\\ArtCast.UWP\\project.json",
+      "projectPath": "C:\\Users\\UserPc\\Documents\\ArtCast\\ArtCast\\ArtCast\\ArtCast.UWP\\ArtCast.UWP.csproj",
+      "projectJsonPath": "C:\\Users\\UserPc\\Documents\\ArtCast\\ArtCast\\ArtCast\\ArtCast.UWP\\project.json",
       "packagesPath": "C:\\Users\\UserPc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\UserPc\\Documents\\Cast\\ArtCast\\ArtCast\\ArtCast.UWP\\obj\\",
+      "outputPath": "C:\\Users\\UserPc\\Documents\\ArtCast\\ArtCast\\ArtCast\\ArtCast.UWP\\obj\\",
       "projectStyle": "ProjectJson",
       "configFilePaths": [
         "C:\\Users\\UserPc\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -22631,8 +22631,8 @@
       "frameworks": {
         "uap10.0.10586": {
           "projectReferences": {
-            "C:\\Users\\UserPc\\Documents\\Cast\\ArtCast\\ArtCast\\ArtCast\\ArtCast.csproj": {
-              "projectPath": "C:\\Users\\UserPc\\Documents\\Cast\\ArtCast\\ArtCast\\ArtCast\\ArtCast.csproj"
+            "C:\\Users\\UserPc\\Documents\\ArtCast\\ArtCast\\ArtCast\\ArtCast\\ArtCast.csproj": {
+              "projectPath": "C:\\Users\\UserPc\\Documents\\ArtCast\\ArtCast\\ArtCast\\ArtCast\\ArtCast.csproj"
             }
           }
         }

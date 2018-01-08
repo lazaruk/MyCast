@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <SelectedDevice> 7" Lollipop %285.1.1%29 XHDPI Tablet</SelectedDevice>
+    <SelectedDevice> 10.1" KitKat %284.4%29 XHDPI Tablet</SelectedDevice>
     <DefaultDevice>Android_ARM_Nougat</DefaultDevice>
   </PropertyGroup>
 </Project>

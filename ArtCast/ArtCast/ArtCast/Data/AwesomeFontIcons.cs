@@ -23,6 +23,10 @@
         public const string Link = "\uf0c1";
         public const string Whatsup = "\uf232";
         public const string Viber = "\uf060";
-        public const string Telegram = "\uf2c6";
+        public const string Telegram = "\uf2c6"; 
+
+        public const string Edit = "\uf040";
+        public const string Down = "\uf078";
+        public const string Up = "\uf077";
     }
 }

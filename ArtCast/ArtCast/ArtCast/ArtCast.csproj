@@ -72,12 +72,14 @@
     <Compile Include="Views\Pages\Base\PageWithNavigation.cs" />
     <Compile Include="Views\Pages\Home\HomePage.cs" />
     <Compile Include="Views\Pages\Menu\MenuHeaderView.cs" />
+    <Compile Include="Views\Pages\Popups\BaseDialog.cs" />
     <Compile Include="Views\Pages\Popups\LoginAndRegisterDialog.cs" />
     <Compile Include="Views\Pages\Base\BasePage.cs" />
     <Compile Include="Views\Pages\LoginAndRegister\LoginForm.cs" />
     <Compile Include="Views\Pages\LoginAndRegister\RegisterForm.cs" />
     <Compile Include="Views\MainPage.cs" />
     <Compile Include="Views\Pages\Menu\MenuPage.cs" />
+    <Compile Include="Views\Pages\Profile\EditProfileForm.cs" />
     <Compile Include="Views\Pages\Profile\ProfilePage.cs" />
     <Compile Include="Views\StartPage.cs" />
     <Compile Include="Views\Templates\Cells\ItemCell.cs" />

@@ -43,4 +43,10 @@
         Viber,
         Telegram
     }
+
+    public enum EditProfileSections
+    {
+        UserInfo,
+        Contacts
+    }
 }

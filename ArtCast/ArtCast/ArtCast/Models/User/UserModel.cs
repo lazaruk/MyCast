@@ -6,6 +6,7 @@ namespace ArtCast.Models.User
 {
     public class UserModel
     {
+        public string Id { get; set; }
         public string Login { get; set; }
         public string Phone { get; set; }
         public string City { get; set; }

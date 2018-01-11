@@ -1,9 +1,10 @@
-﻿using System.Collections.Generic;
-using ArtCast.Data;
+﻿using ArtCast.Data;
 using ArtCast.Models.User;
 using ArtCast.Styles;
+using ArtCast.ViewModels;
 using ArtCast.Views.Elements.Profile;
 using ArtCast.Views.Pages.Base;
+using System.Collections.Generic;
 using Xamarin.Forms;
 
 namespace ArtCast.Views.Pages.Profile
@@ -12,6 +13,17 @@ namespace ArtCast.Views.Pages.Profile
     {
         public ProfilePage():base("Профиль", false)
         {
+            var edit = new Label
+            {
+                Text = AwesomeFontIcons.Edit,
+                FontFamily = AppStyles.FontAwesomeFamily,
+                FontSize = 25,
+                TextColor = Color.White
+            };
+            edit.GestureRecognizers.Add(new TapGestureRecognizer{Command = App.Current.Navigation.ShowPopupCommand, CommandParameter = new CreatePopupInfo(typeof(EditProfileForm))});
+
+            TopNavigationBar.RightItems = new List<View>{edit};
+
             var conatctsList = new List<UserContacts> //todo from bd
             {
                 new UserContacts {Type = Сommunications.Vk, Link = "https://vk.com/id68543836"},
@@ -40,6 +52,7 @@ namespace ArtCast.Views.Pages.Profile
 
             var user = new UserModel
             {
+                Id = "123-23-12",
                 Login = "lazaruk.kl@gmail.com",
                 SourcePrimaryPhoto = "https://pp.userapi.com/c638831/v638831371/5a0f5/e1hsPbSCFG4.jpg",
                 SourcePhotos = photosList, Name = "Карина Лазарук",
